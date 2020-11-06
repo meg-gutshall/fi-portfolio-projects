@@ -1,0 +1,117 @@
+---
+description: As extracted from the JavaScript Project Instructions GitHub repository
+---
+
+# Project Planning, Tips, and Support
+
+Unlike labs, projects do not have the guardrails of a `README` and tests to structure your work. Instead, you need to design and plan your features yourself. There tips should help you plan your project effectively:
+
+## Project Support
+
+There are a few ways for you to find support with your project as you build:
+
+* Attend weekly study groups and project office hours listed on the study groups tab in your Learn.co account. Office hours and topic-specific study groups are the best places to leverage technical support from your instructors and fellow students.
+* Participate in the Slack channel to discuss project concepts and questions.
+* Lastly, if you have questions about the project or the assessment that cannot be addressed using the above options, please do not use the "Ask A Question" feature. Instead, reach out to one of the section leads.
+
+{% hint style="warning" %}
+**REMINDER:** Your work should be your own! For more details, see [Project Rules of the Road](project-rules-of-the-road.md).
+{% endhint %}
+
+## Communicating About Your Project
+
+Your project should shine. To help your vision come across clearly, you should create and submit the following along with your project:
+
+* A `README.md` file with a description of the application
+* A blog post telling the story behind the application, challenges you overcame, and what you learned
+* A 1–2 minutes video demo walking through the features of your application
+
+The audience should be the technically-minded outsider that stumbles on your project. Do not expect that they will have any of the context behind your project; you need to tell them that context. Focus on telling them the story of your application. What problem does it solve? How do the features come together to solve that problem? Why did you decide to build it?
+
+### Example Videos and Blogs
+
+* Wine and Dine \| [Video](https://drive.google.com/file/d/1C_Tsh-oi7BWLfGE6izajtJ0MnVYBRu0S/view) \| [Blog](https://jenniferbusca.github.io/javascript_rails_api_project_oo_javascript)
+* Trading App \| [Video](https://www.youtube.com/watch?v=IR5Dp7zgspQ&t=14s) \| [Blog](https://bo1623.github.io/rails_and_javascript_project_-_trading_app)
+
+## Guidelines for Working Solo
+
+When working on a team, you get to have explicit conversations about the design of your application and the choices you make. Since you are working solo, you need to be extra clear — and **write down** — the decisions you make about your project. This will not only help you think more clearly about your design, it will also give context to instructors if you ask for help, and help you communicate about your project when you are done.
+
+## Planning
+
+* Brainstorm the problem that you want your application to solve. It's okay to take inspiration for the features you want to build from other sites or projects you've seen \(it's not okay to use their code though\).
+* Plan what features your app will have. You can write **User Stories** to help make it clear what you are planning to build.
+* Model your domain. You need to know what the nouns in your project are — the objects in the "world" of your application. It can be helpful to draw the relationships between your models.
+* Plan how your features will work.
+
+## User Stories
+
+**User Stories** are a powerful tool for succinctly describing a set of functionality in terms of what it allows the user to do.
+
+Some examples of user stories:
+
+* A user is able to view, add new, edit, and delete travel locations.
+* A user is able to review a travel location.
+* A user is able to edit and delete a review for a travel location.
+
+When you have written the user stories for your application, you can turn them into the technical requirements needed in order to turn those stories into working features.
+
+## Domain Modeling
+
+As you turn your user stories into more clear technical specifications for features, you can start by modeling the data that your application will store and show. Identify the nouns in your stories, their properties, and their relationships.
+
+A description of the domain for the above stories might be:
+
+* A travel location has a name, a description, a location, and an image URL
+* A review has a comment and a rating
+* A review belongs to one travel location \(a travel location has many reviews\)
+* A travel location has an average rating that is calculated by its aggregate review ratings
+
+Later on, you will be ready to create the database schema and application models corresponding to this domain.
+
+## MVP ASAP
+
+\(Minimum Viable Product, As Soon As Possible\)
+
+Building things is hard. It's very hard to predict what will be difficult in a project. Sometimes things that appear on the surface to be easy will end up taking hours of debugging.
+
+With that in mind, it's important to build an MVP as quickly as possible. Instead of getting stuck on advanced features, start with a basic working version of the application, then steadily add features piece by piece.
+
+## Build Vertically, Not Horizontally
+
+It's easy to end up having to do lots of rework and fixing depending on how you order the thing you build in your application, particularly if you build "horizontally."
+
+You can visualize all the parts of your app as a grid, with the features as columns \(x axis\) and the different layers of the stack as rows \(y axis\).
+
+|   | View Location | Browse Locations | Edit Location | Add Review | Edit Review |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Migrations |   |   |   |   |   |
+| Models |   |   |   |   |   |
+| Seed Data |   |   |   |   |   |
+| Controller Actions |   |   |   |   |   |
+| Data Fetching |   |   |   |   |   |
+| View Logic |   |   |   |   |   |
+| Styling |   |   |   |   |   |
+
+A strong temptation is to build your project row-by-row. It _feels_ easy to start by writing all the migrations for all of your models, then flesh out the models, etc.
+
+**Do not do this!**
+
+If you try to build all of your migrations, the all of your models, then all of your controllers, then all of your fetch calls, then all of your view logic, you will have a bad time. Inevitably, your view logic will end up requiring changes to the underlying layers, and you will write code that doesn't get used.
+
+Instead, build **vertically**, column-by-column. Write code for all of the vertical layers involved in one feature before moving on to the next feature. That way, you'll minimize rewriting, and end up with working features without waste.
+
+The project process should look like:
+
+* Planning: Write down your ideas and **use diagrams**.
+* Start by creating the front-end and back-end directories.
+* Build the **R** from CRUD for just one model, _vertically!_ That means one migrations, one model, one controller action, one fetch call, and one DOM update. Add seed data and confirm that your code works by testing it visually.
+* Then, build the next CRUD action \(maybe Create or Update\), again building **vertically**.
+* Continue building features one-by-one, _vertically!_
+* Add feature-by-feature, not model-by-model or layer-by-layer.
+* Test each feature, add styles, and create seed data as you go, not all at once at the end.
+
+## Source
+
+{% embed url="https://github.com/learn-co-students/js-spa-project-instructions-online-web-sp-000/blob/master/project-planning-tips.md" caption="Planning, Tips, and Support" %}
+
