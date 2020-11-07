@@ -27,5 +27,5 @@
   * [v1](js-rails-api-project/js-project-planning/v1.md)
   * [Active Record Associations](js-rails-api-project/js-project-planning/active-record-associations.md)
   * [Enums](js-rails-api-project/js-project-planning/enums.md)
-  * [Future Features](js-rails-api-project/js-project-planning/future-features.md)
+  * [Refactoring & Future Features](js-rails-api-project/js-project-planning/refactoring-and-future-features.md)
 
