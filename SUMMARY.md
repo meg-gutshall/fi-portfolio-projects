@@ -22,6 +22,7 @@
   * [May 5, 2020](js-rails-api-project/js-project-build-log/may-5-2020.md)
   * [JWT Auth Rails](js-rails-api-project/js-project-build-log/jwt-auth-rails.md)
   * [Road Map](js-rails-api-project/js-project-build-log/road-map.md)
+  * [README Files](js-rails-api-project/js-project-build-log/readme-files.md)
 * [JavaScript Project Planning](js-rails-api-project/js-project-planning/README.md)
   * [v2](js-rails-api-project/js-project-planning/v2.md)
   * [v1](js-rails-api-project/js-project-planning/v1.md)
