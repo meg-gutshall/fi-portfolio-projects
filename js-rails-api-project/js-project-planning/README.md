@@ -111,7 +111,7 @@ end
 
 ## Domain Model
 
-![](../../.gitbook/assets/model-map-mvp.png)
+![Model Map MVP](../../.gitbook/assets/model-map-mvp.jpg)
 
 ## JS Modularization
 
