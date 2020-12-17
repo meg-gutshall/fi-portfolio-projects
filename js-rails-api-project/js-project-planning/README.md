@@ -47,7 +47,7 @@ end
 class CreateRequests < ActiveRecord::Migration[6.0]
   def change
     create_table :topic_requests do |t|
-      t.string     :topic
+      t.string     :idea
       t.text       :description
       t.integer    :upvotes
       t.references :codepanion
